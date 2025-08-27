@@ -38,9 +38,9 @@ cd customer-management
 <br>
 
 ## デプロイ
-Renderにてホスティングされています。
-以下のリンクから実際に動作する顧客管理システムをご覧頂けます。
-[顧客管理システムを開く](https://customer-management-nwmz.onrender.com)
+Renderにてホスティングされています。<br>
+以下のリンクから実際に動作する顧客管理システムをご覧頂けます。<br>
+[顧客管理システムを開く](https://customer-management-nwmz.onrender.com)<br>
 <br>
 
 ## 工夫した点
