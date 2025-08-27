@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>顧客管理&nbsp;|&nbsp;顧客リスト&nbsp;|&nbsp;顧客編集</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="../../css/main.css" type="text/css">
+
+    </head>
+
+    <body>
+        <header>
+            <h1>顧客管理システム</h1>
+            <nav>
+                <ul>
+                    <li><a href="../../dashboard/index.html">ダッシュボード</a></li>
+                    <li><a href="../../customers/index.html">顧客管理</a></li>
+                    <li><a href="../../contact/index.html">お問い合わせ</a></li>
+                    <li><a href="../../history/index.html">訪問履歴</a></li>
+                    <li><a href="../../users/index.html">ユーザー</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <nav id="breadcrumb">
+            <ul>
+                <li><a href="../../dashboard/index.html">ダッシュボード</a></li>
+                <li><a href="../index.html">顧客リスト</a></li>
+                <li>顧客編集</li>
+            </ul>
+        </nav>
+
+        <main>
+                <h2>顧客管理</h2>
+
+                <section>
+                    <h3>顧客編集</h3>
+                    <form id="editCustomerForm">
+                        <input type="hidden" name="customerID" id="customerID">
+
+                        <dl class="detail">
+                            <dt><label for="customerName">顧客名</label></dt>
+                            <dd><input type="text" name="customerName" id="customerName" required></dd>
+
+                            <dt><label for="customerEmail">メールアドレス</label></dt>
+                            <dd><input type="tel" name="customerEmail" id="customerEmail" required></dd>
+
+                            <dt><label for="customerTel">電話番号</label></dt>
+                            <dd><input type="tel" name="customerTel" id="customerTel" required></dd>
+
+                            <dt><label for="customerAddress">住所</label></dt>
+                            <dd><input type="text" name="customerAddress" id="customerAddress"></dd>
+                        </dl>
+
+                        <p class="submitP">
+                            <button type="submit">保存</button>
+                        </p>
+                    </form>
+
+                    <p>
+                        この顧客情報を削除する場合は<a href="#" id="deleteLink">こちら</a>から
+                    </p>
+
+                </section>
+        </main>
+        <script src="edit.js"></script>
+    </body>
+</html>

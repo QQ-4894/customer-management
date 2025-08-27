@@ -1,0 +1,18 @@
+<tr>
+    <td>{{id}}</td>
+    <td>{{name}}</td>
+    <td>{{email}}</td>
+    <td>{{phone}}</td>
+    <td>{{address}}</td>
+    <td>
+        <form action="edit/index.html" method="GET">
+            <input type="hidden" name="customerID" value="{{id}}">
+            <button type="submit">編集</button>
+        </form>
+    </td>
+</tr>
+
+<!-- 
+💡補足：テンプレートの中での相対パスは「表示先」に合わせる
+テンプレートがどこに置かれていても、最終的にどのHTMLに埋め込まれて表示されるかが重要です
+ -->

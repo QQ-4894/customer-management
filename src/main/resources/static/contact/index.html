@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>お問い合わせ&nbsp;|&nbsp;お問い合わせリスト</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="../css/main.css" type="text/css">
+
+    </head>
+
+    <body>
+        <header>
+            <h1>顧客管理システム</h1>
+            <nav>
+                <ul>
+                    <li><a href="../dashboard/index.html">ダッシュボード</a></li>
+                    <li><a href="../customers/index.html">顧客管理</a></li>
+                    <li><a href="index.html">お問い合わせ</a></li>
+                    <li><a href="../history/index.html">訪問履歴</a></li>
+                    <li><a href="../users/index.html">ユーザー</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <nav id="breadcrumb">
+            <ul>
+                <li><a href="../dashboard/index.html">ダッシュボード</a></li>
+                <li>お問い合わせリスト</li>
+            </ul>
+        </nav>
+
+        <main>
+                <h2>お問い合わせ管理</h2>
+                <section>
+                    <h3>お問い合わせリスト</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>日時</th>
+                                <th>名前</th>
+                                <th>メールアドレス</th>
+                                <th>内容</th>
+                            </tr>
+                        </thead>
+
+                        <tbody id="inquiryList"></tbody>
+                    </table>
+                </section>
+        </main>
+        <script src="contact.js"></script>
+    </body>
+</html>

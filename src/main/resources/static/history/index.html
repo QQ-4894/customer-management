@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>訪問履歴&nbsp;|&nbsp;訪問履歴データ</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="../css/main.css" type="text/css">
+
+    </head>
+
+    <body>
+        <header>
+            <h1>顧客管理システム</h1>
+            <nav>
+                <ul>
+                    <li><a href="../dashboard/index.html">ダッシュボード</a></li>
+                    <li><a href="../customers/index.html">顧客管理</a></li>
+                    <li><a href="../contact/index.html">お問い合わせ</a></li>
+                    <li><a href="../history/index.html">訪問履歴</a></li>
+                    <li><a href="index.html">ユーザー</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <nav id="breadcrumb">
+            <ul>
+                <li><a href="../dashboard/index.html">ダッシュボード</a></li>
+                <li>訪問履歴データ</li>
+            </ul>
+        </nav>
+
+        <main>
+            <h2>訪問履歴管理</h2>
+                <section>
+                    <h3>訪問履歴データ</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>日時</th>
+                                <th>企業名</th>
+                                <th>担当者</th>
+                                <th>訪問内容</th>
+                                <th>訪問者</th>
+                            </tr>
+                        </thead>
+                        
+                        <tbody id="historyList"></tbody>
+                    </table>
+                </section>
+        </main>
+        <script src="history.js"></script>
+    </body>
+</html>

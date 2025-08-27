@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>顧客管理&nbsp;|&nbsp;顧客リスト</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="../../css/main.css" type="text/css">
+
+    </head>
+
+    <body>
+        <header>
+            <h1>顧客管理システム</h1>
+            <nav>
+                <ul>
+                    <li><a href="../../dashboard/index.html">ダッシュボード</a></li>
+                    <li><a href="../../customers/index.html">顧客管理</a></li>
+                    <li><a href="../../contact/index.html">お問い合わせ</a></li>
+                    <li><a href="../../history/index.html">訪問履歴</a></li>
+                    <li><a href="../../users/index.html">ユーザー</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <nav id="breadcrumb">
+            <ul>
+                <li><a href="../../dashboard/index.html">ダッシュボード</a></li>
+                <li><a href="../../customers/index.html">顧客リスト</a></li>
+                <li>顧客新規登録</li>
+            </ul>
+        </nav>
+
+        <main>
+                <h2>顧客管理</h2>
+
+                <section>
+                    <h3>顧客新規登録</h3>
+
+                    <p>
+                        必要事項を入力して、登録ボタンをクリックしてください。<br>
+                        なお、顧客IDはシステム側で自動採番します。
+                    </p>
+
+                    <form id="customerForm">
+                        <dl class="detail">
+                            <dt><label for="customerName">顧客名</label></dt>
+                            <dd><input type="text" name="customerName" id="customerName" placeholder="例)柴田 拓弥" required></dd>
+                            
+                            <dt><label for="customerEmail">メールアドレス</label></dt>
+                            <dd><input type="email" name="customerEmail" id="customerEmail" placeholder="aaa@example.com" required></dd>
+                            
+                            <dt><label for="customerTel">電話番号</label></dt>
+                            <dd><input type="tel" name="customerTel" id="customerTel" placeholder="09045785547" required></dd>
+
+                            <dt><label for="customerAddress">住所</label></dt>
+                            <dd><input type="text" name="customerAddress" id="customerAddress"></dd>
+                        </dl>
+
+                        <p class="submitP">
+                            <button type="submit">登録</button>
+                        </p>
+
+                    </form>
+                </section>
+        </main>
+        
+        <script src="add.js"></script>
+    </body>
+</html>

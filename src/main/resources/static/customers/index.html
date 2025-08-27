@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>顧客管理&nbsp;|&nbsp;顧客リスト</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="../css/main.css" type="text/css">
+
+    </head>
+
+    <body>
+        <header>
+            <h1>顧客管理システム</h1>
+            <nav>
+                <ul>
+                    <li><a href="../dashboard/index.html">ダッシュボード</a></li>
+                    <li><a href="index.html">顧客管理</a></li>
+                    <li><a href="../contact/index.html">お問い合わせ</a></li>
+                    <li><a href="../history/index.html">訪問履歴</a></li>
+                    <li><a href="../users/index.html">ユーザー</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <nav id="breadcrumb">
+            <ul>
+                <li><a href="../dashboard/index.html">ダッシュボード</a></li>
+                <li>顧客リスト</li>
+            </ul>
+        </nav>
+
+        <main>
+            <h2>顧客管理</h2>
+
+                <section>
+                    <h3>顧客リスト</h3>
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>顧客ID</th>
+                                <th>氏名</th>
+                                <th>メールアドレス</th>
+                                <th>電話番号</th>
+                                <th>住所</th>
+                            </tr>
+                        </thead>
+
+                        <tbody id="customer-list"></tbody>
+                    </table>
+                </section>
+
+                <section>
+                    <h3>顧客新規登録</h3>
+
+                    <p>
+                        新規登録は<a href="../customers/add/index.html">こちら</a>からから行ってください。
+                    </p>
+                </section>
+        </main>
+
+        <script src="index.js"></script>
+    </body>
+</html>
